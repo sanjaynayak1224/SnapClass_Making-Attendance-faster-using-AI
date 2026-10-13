@@ -86,7 +86,7 @@ def teacher_dashboard():
 
 def teacher_tab_take_attendance():
   teacher_id = st.session_state.teacher_data['teacher_id']
-  st.subheader("Take AI Attendance")
+  st.header("Take AI Attendance")
 
   if 'attendance_images' not in st.session_state:
       st.session_state.attendance_images=[]
